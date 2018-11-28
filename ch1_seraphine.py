@@ -15,14 +15,10 @@ J = float(2.5)
 P = int(J)
 O = str(P)
 S = "my name is seraphine"
-
 print(S)
-
-
-
 print(A,B,C,D,E,F)
+V = "my name is Pamela"
 
-V = "my name is seraphine"
-
+#This is me learning how to comment on python or crtl A
 
 
