@@ -14,7 +14,7 @@ A =[1,2,3,4,5]
 J = float(2.5)
 P = int(J)
 O = str(P)
-S = "my name is seraphine"
+S = "mynameisseraphine"
 print(S)
 print(A,B,C,D,E,F)
 V = "my name is Pamela"
