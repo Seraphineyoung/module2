@@ -18,7 +18,7 @@ S = "mynameisseraphine"
 print(S)
 print(A,B,C,D,E,F)
 V = "my name is Pamela"
-M = "my name is Pamela" + V
+M = "my name is Pamela" + " " + V
 print(M)
 #In Python everything is an object...
 #This is me learning how to comment on python or crtl A
