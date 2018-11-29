@@ -39,4 +39,23 @@ def favourite_player():
     input('who is your favourite player? ')
     print("You lie !! Your favourite player is Murray ;yeah yeah")
     
+#    
+#def my_calculator ():
+#    first_number = input('Enter your first number? ')
+#    second_number = input('Enter another number? ')
+#    user_operation = input('Enter an operation? ')
+#   
+#    print (int(first_number) + int(second_number))
+#   
+    
+def hello_name(name):
+   print('hello ' + name + '!')
+    
+    
+    
+    
+    
+    
+    
+    
 
