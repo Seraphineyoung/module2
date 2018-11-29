@@ -44,7 +44,11 @@ seraphine_attributes=['developer','photographer','python','happy']
 
 for letter in seraphine_attributes:
     print (letter)  
-
+   
+#homework chapter 2
+a = 1
+a = a+1
+print(a)
 
 
 
