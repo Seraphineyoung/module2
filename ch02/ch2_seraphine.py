@@ -40,3 +40,15 @@ age = 7
 print(age_description)
 
 
+seraphine_attributes=['developer','photographer','python','happy']
+
+for letter in seraphine_attributes:
+    print (letter)  
+
+
+
+
+    
+                       
+
+
