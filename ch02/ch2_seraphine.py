@@ -25,9 +25,18 @@ print('\n')
 print('the lord of the rings'.title())
 
 S1 = 'hello' + 'world'
-S2 = 'Joke' * 3
+S2 = ('Joke ') * 3
 S3 = 5
-print (S1 + S2 *10)
-print (S1 + S2 + S3)
+print ((S1 + S2 +'\n')  * 10)
+print('\n')
+print (S1 + S2 + str(S3))
+
+age = 6 
+like ='painting'
+age_description = 'my age is {} and I like {}.'.format(age,like)
+
+age = 7
+
+print(age_description)
 
 
