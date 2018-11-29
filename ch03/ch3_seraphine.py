@@ -37,6 +37,6 @@ def add_numbers():
     
 def favourite_player():
     input('who is your favourite player? ')
-    print("Your favourite player is Murray yayaya")
+    print("You lie !! Your favourite player is Murray ;yeah yeah")
     
 
