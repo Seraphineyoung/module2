@@ -16,7 +16,6 @@ print (type(age))
 print('hello' + 'world')
 print('Joke' * 3)
 
-
 late = 'Joke i am late'
 print(('late  \n')  * 10)
 print('chen' + str(3))
@@ -24,3 +23,11 @@ print('hello'.upper())
 print('GOODBYE'.lower())
 print('\n')
 print('the lord of the rings'.title())
+
+S1 = 'hello' + 'world'
+S2 = 'Joke' * 3
+S3 = 5
+print (S1 + S2 *10)
+print (S1 + S2 + S3)
+
+
