@@ -69,45 +69,82 @@ print('We can transport', passengers, 'to carpool today')
 print('We need to put about', average_passengers_per_car, 'in each car')
 """
 
-#def hello_world_2args(d,e,f,g):
-#    print("my name is {} {} and I am {} years old".format(e,f,g))
-#
-#a1 = 'hello'
-#b1 = 'world'
-#a2 = 'love'
-#b2 = 'coding'
-#s1 = 'seraphine'
-#s2 = 'young'
-#s3 = 28
-#
-#hello_world_2args(a1,b1,a2,b2)
-#
-#hello_world_2args(s1,s2,s3,b2)
-#
-#
-#def add_two_numbers(numb1,numb2):
-#    print(int(numb1) + int(numb2))
-#    
+def hello_world_2args(d,e,f,g):
+    print("my name is {} {} and I am {} years old".format(e,f,g))
+
+a1 = 'hello'
+b1 = 'world'
+a2 = 'love'
+b2 = 'coding'
+s1 = 'seraphine'
+s2 = 'young'
+s3 = 28
+
+hello_world_2args(a1,b1,a2,b2)
+
+hello_world_2args(s1,s2,s3,b2)
+
+
+def add_two_numbers(numb1,numb2):
+    print(int(numb1) + int(numb2))
+    
 #add_two_numbers(2,2)
-#
-#
-#def add_new_twonumbs(num1 , num2):
-#    print(num1 + num2)
-#     
+
+
+def add_new_twonumbs(num1 , num2):
+    print(num1 + num2)
+     
 #add_new_twonumbs(1,3)
 
 #mid-class challenge
+    
+
+
 
 
 def temp_conversion(centigrade):
+    centigrade = int(centigrade)
     fahrenheit = centigrade * 9.0/5.0 + 32
     kelvin = centigrade + 273.15
-    print('your temperature is {} in fahrenheit and {} in kelvin'.format(fahrenheit , kelvin))
-    
-temp_conversion(100)
 
-#to do
-#write the same function with no parameter
+    print("That's" ,  fahrenheit ,  "degrees in fahrenheit and" , kelvin , "degrees in kelvin.")
+    return (kelvin , fahrenheit)
+
+
+
+
+new_kelvin , new_fahrenheit = temp_conversion(centigrade)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
