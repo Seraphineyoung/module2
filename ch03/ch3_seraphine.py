@@ -22,34 +22,59 @@
 #print ("Hello {}! from {} I am {} years old!".format(name.upper(),city.title(),age ))
 
 
-def hello_world():
-    my_details()
-
-def my_details():
-    user_name = input('What is our name? ')
-    print ("My name is {}".format(user_name.title()))
-    add_numbers()
-    
-def add_numbers():
-    user_age = input('what is your age ? ')
-    print(int(user_age) + 2)
-    favourite_player()
-    
-def favourite_player():
-    input('who is your favourite player? ')
-    print("You lie !! Your favourite player is Murray ;yeah yeah")
-    
+#def hello_world():
+#    my_details()
+#
+#def my_details():
+#    user_name = input('What is our name? ')
+#    print ("My name is {}".format(user_name.title()))
+#    add_numbers()
+#    
+#def add_numbers():
+#    user_age = input('what is your age ? ')
+#    print(int(user_age) + 2)
+#    favourite_player()
+#    
+#def favourite_player():
+#    input('who is your favourite player? ')
+#    print("You lie !! Your favourite player is Murray ;yeah yeah")
+#    
+#    
 #    
 #def my_calculator ():
 #    first_number = input('Enter your first number? ')
 #    second_number = input('Enter another number? ')
-#    user_operation = input('Enter an operation? ')
+#
 #   
 #    print (int(first_number) + int(second_number))
 #   
-    
-def hello_name(name):
-   print('hello ' + name + '!')
+#    
+#def hello_name(name):
+#   print('hello ' + name + '!')
+
+car = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 30
+cars_not_driven = car - drivers
+cars_driven = drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / cars_driven
+
+print('There are' , car, "cars available" )
+print('There are only', drivers, 'drivers available')
+print('There will be', cars_not_driven, 'empty cars today')
+print('We can transport', passengers, 'to carpool today')
+print('We need to put about', average_passengers_per_car, 'in each car')
+
+
+
+
+
+
+
+
+
     
     
     
