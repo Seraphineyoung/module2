@@ -1,3 +1,4 @@
+"""
 #first way
 
 print('what is your name? ')
@@ -66,21 +67,44 @@ print('There are only', drivers, 'drivers available')
 print('There will be', cars_not_driven, 'empty cars today')
 print('We can transport', passengers, 'to carpool today')
 print('We need to put about', average_passengers_per_car, 'in each car')
+"""
+
+def hello_world_2args(d,e,f,g):
+    print("my name is {} {} and I am {} years old".format(e,f,g))
+
+a1 = 'hello'
+b1 = 'world'
+a2 = 'love'
+b2 = 'coding'
+s1 = 'seraphine'
+s2 = 'young'
+s3 = 28
+
+hello_world_2args(a1,b1,a2,b2)
+
+hello_world_2args(s1,s2,s3,b2)
 
 
-
-
-
-
-
-
-
+#def add_two_numbers():
+#    numb1 = input('what is your first number?:')
+#    numb2 = input('what is your second number?:')
+#    print(int(numb1) + int(numb2))
+#    
+#add_two_numbers()
+    
+def add_new_twonumbs(num1 , num2):
+    print(num1 + num2)
     
     
+add_new_twonumbs(1,3)
     
     
-    
-    
-    
-    
+
+
+
+
+
+
+
+
 
