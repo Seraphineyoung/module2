@@ -39,11 +39,50 @@ class Customer(object):
 
 customer_1 = Customer('seraphine young', 1000.0,500)
 print(customer_1.name)
-#add_to_balance = (customer_1.deposit(1200))
+add_to_balance = (customer_1.deposit(1200))
 print(customer_1.balance)
-print(customer_1.withdraw(100))
+
+customer_withdraw = int(input('How much do you wanna withdraw today? :'))
+
+print(customer_1.withdraw(customer_withdraw))
+
+print(customer_1.balance)
 
 print(customer_1.overdraft_limit(500))
+
+
+class Animal():
+    def __init__(self,age):
+        self.age = age
+           
+    def eat(self):
+        print('yum')
+        
+    def new_age(self,num):
+       self.age += 10
+       return self.age
+        
+class Dog(Animal):
+    def bark(self):
+        print('Woof!')
+        
+        
+class Cat(Dog):
+    def meow(self):
+        print('Meow')
+        
+snoopy = Dog(10)
+snoopy.bark()
+snoopy.eat()
+my_day_age = snoopy.new_age(10)
+print(my_day_age)
+
+
+
+
+
+
+
 
 
 
