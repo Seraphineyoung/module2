@@ -52,8 +52,8 @@
 #
 #
 class Animal():
-#    def __init__(self,age ):
-#        self.age = age
+    def __init__(self,age ):
+        self.age = age
            
     def eat(self):
         print('yum')
@@ -81,8 +81,8 @@ class Cat(Dog):
 class SuperRobot():
     def __init__(self):
         self.zeddy = Robot()
-        self.snoopy= Dog()
-        self.moory = Cat()
+        self.snoopy= Dog(10)
+        self.moory = Cat(10)
         self.tidy = CleanRobot()
         
     def playGame(self):
