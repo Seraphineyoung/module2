@@ -57,8 +57,25 @@ def transaction_type(balance):
     else:
         return 'Please choose a valid option'
     
+def user_confirm_phone():
+    first_num = int(input('Please enter your number'))
+    second_num = int(input('Please enter your number'))
     
+    if first_num == second_num :
+        print ('num ok')
+    
+    else:
+        print ('Your number do not match..Try again')
+        
+def credit_amount_input(balance):
+    credit_amount = int(input('How much credit do you want ? Choose £5,£10, £15, £20'))
+    if credit_amount > balance:
+        print('Amount is higher than your available balance')
 
+    
+def mobile_data_bundle(balance):
+    user_confirm_phone()
+    
 
         
     
