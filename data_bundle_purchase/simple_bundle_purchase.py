@@ -7,7 +7,7 @@ def DataBundlePurchase(truePasscode, balance):
     
      counter = 0
  
-     if userInput() == truePasscode and counter < 3:
+     if userInput() == truePasscode :
         return transaction_type(balance)
     
      elif userInput() != truePasscode and counter < 3:
@@ -53,7 +53,11 @@ def transaction_type(balance):
     if userOption == 1:
         return f'Your Credit Balance is {balance}'
     elif userOption == 2:
-        return 'Purchase Data Bundle is not available at this time'
+         user_confirm_phone()
+         credit_amount_input()
+         
+         
+        #return 'Purchase Data Bundle is not available at this time'
     else:
         return 'Please choose a valid option'
     
@@ -67,15 +71,22 @@ def user_confirm_phone():
     else:
         print ('Your number do not match..Try again')
         
-def credit_amount_input(balance):
-    credit_amount = int(input('How much credit do you want ? Choose £5,£10, £15, £20'))
-    if credit_amount > balance:
-        print('Amount is higher than your available balance')
+def credit_amount_input():
+    credit_amount = int(input('How many GB do you want ? Choose 15,20,25,30,35'))
+    return credit_amount
+    
+        
+def max_top_up_amount(credit_amount_input,balance):
+    
+    if credit_amount_input() <= 35:
+        return  balance - credit_amount_input() 
+   
+    else:
+        print(' Please choose Options provided')
+    
+    
+    
 
-    
-def mobile_data_bundle(balance):
-    user_confirm_phone()
-    
 
         
     
