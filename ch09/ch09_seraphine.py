@@ -122,6 +122,66 @@ print(b)
 
 
 
+#LAMBDA FUNCTION
+
+a = [0,1,2,3,4,5,6,7,8,9]
+b = (0,1,2,3,4,5,6,7,8,9)
+x = ['the','cat','sat' ,'sun','york']
+myFavF = ["apple", "orange", "banana",""]
+x = ["zz", "sb", "lf", "hw", "ed", "fy"]
+z = ["fg", "uj", "sx", "uj", "ww", "cf"]
+
+
+y = sorted(x)
+
+x2 = [('a',3,z),('c',1,y),('b', 5,x)]
+
+print(x2)
+
+print()
+
+print(sorted(x2, key=lambda s:s[2]))
+
+print()
+
+print(sorted(x2, key=lambda s:s[2][1]))
+
+print()
+print(sorted(x2, key=lambda s:s[2][1][0]))
+
+
+
+#employees = [('Janine Saunders', 50000, 'UX Designer',),
+#     ('Robert Webster', 90000, 'Senior Engineer'),
+#     ('Jack Murning', 40000, 'Junior Web Developer'),
+#     ('Jen Burns', 30000, 'Content Creator'), 
+#     ('Hannah Beth', 40000, 'Communications Specialist')]
+#
+#leave_remaining = 
+#
+#
+#    
+#print (sorted(employees, key = lambda salary:salary[2]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
