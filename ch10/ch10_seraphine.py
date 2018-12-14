@@ -18,16 +18,20 @@ metal_keys_only = metal.keys()
 metal_keys_list = list(metal_keys_only)
 
 
-
+#sorting the second value in decending order and returning the keys only
 metal_keys_list.sort(reverse = True,key=lambda k:metal[k][1])
 
-#returning only keys
-#print(metal_keys_list)
+
+print(metal_keys_list)
 
 
-#returning key-value pairs
+#returning key-value pairs for the second position in descending order
 sorted_value = sorted(metal.items(),reverse= True,key=lambda kv: kv[1][1])
 print(sorted_value)
+
+
+
+
 
 
 
