@@ -1,4 +1,4 @@
-
+#function to print series of values produced when doing repeated division (by 2) of some intial value
 x = 33
 
 while x >= 1:
@@ -9,6 +9,8 @@ while x >= 1:
     
 print(x)
 
+
+#Writing a while number that takes a number n and computes traingular numbers.
 
 def tri(n):
     
@@ -25,6 +27,7 @@ def tri(n):
 
 print(tri(4))
 
+#working with students scores while loop
 
 def student_result ():
     
