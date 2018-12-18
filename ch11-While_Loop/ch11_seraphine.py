@@ -28,32 +28,61 @@ def tri(n):
 print(tri(4))
 
 #working with students scores while loop
+#
+#def student_result ():
+#    
+#    mark = 1 
+#    
+#    while mark > 0:
+#        
+#        mark = int(input('Please enter your score : ' ))
+#        
+#        if mark >= 70:
+#            print(f'Mark is {mark} - first class')
+#            
+#        elif mark >= 40:
+#            print(f'Mark is {mark} - pass')
+#            
+#        else:
+#            print(f'Mark is {mark} - fail')
+#            
+#             
+#student_result()
+    
 
-def student_result ():
+#introducing break statements in while loops
+
+i = 55
+
+while i > 10:
     
-    mark = 1 
+    print(i)
     
-    while mark > 0:
+    i = i * 0.8
+    
+    if i == 35.2:
+        break
+
+#Enter username function
         
-        mark = int(input('Please enter your score : ' ))
+#def printGreeting():
+#    
+#    name = ''
+#    
+#    while name != 'done':
+#        name = input('what is your name ?')
+#        print(f'Hello {name}')
+#    
+#printGreeting()   
         
-        if mark >= 70:
-            print(f'Mark is {mark} - first class')
-            
-        elif mark >= 40:
-            print(f'Mark is {mark} - pass')
-            
-        else:
-            print(f'Mark is {mark} - fail')
-            
-             
-student_result()
+
+while True:
+    name = input('Enter Your name ?')
     
+    if name == 'done':
+        break
     
-    
-    
-    
-    
+    print(f'Hello {name}')
     
     
     
