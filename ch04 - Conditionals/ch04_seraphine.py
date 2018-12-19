@@ -17,7 +17,7 @@ print(isaTeen)
 if age < 13 :
     print('child')
 elif age < 18:
-    print('child')
+    print('teen')
 elif age < 65:
     print('adult')
 else:
