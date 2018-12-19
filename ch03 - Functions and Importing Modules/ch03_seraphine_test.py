@@ -1,7 +1,7 @@
-from ch03_function import *
+from ch03_seraphine_function import *
 
 centigrade = input('what is your centigrade: ?')
-temp_conversion(centigrade)
+#temp_conversion(centigrade)
 new_kelvin , new_fahrenheit = temp_conversion(centigrade)
 print (new_kelvin,new_fahrenheit)
 

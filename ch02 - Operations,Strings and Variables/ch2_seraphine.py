@@ -45,6 +45,8 @@ print('\n')
 print (S1 + S2 + str(S3))
 
 print('\n')
+
+
 #string Formating
 age = 6 
 like ='painting'
