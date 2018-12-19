@@ -1,5 +1,110 @@
 
-#exercise 6
+####################### TASK 1 ##########################
+
+#CREATING A DICTIONARY
+salary = {}
+salary['sera'] = 20000
+print(salary)
+salary['brothers'] = ['Ekema','daddy','Etete']
+
+
+####################### TASK 2 ##########################
+#Updating a value or key on the dictionary
+salary['sera'] += 1000
+print(salary)
+
+
+classMates = {}
+classMates['mel'] = 862
+classMates['mari'] = 885
+classMates['seraphine'] = 385
+
+#Updating a value or key on the dictionary
+classMates['seraphine'] = 7532633368
+classMates['mel'] = 86256
+classMates['mari'] = 88595
+
+
+#uPDATING VALUES IN A DICTIONARY
+tilly = 'tilly'
+
+classMates['jennifer'] = 3456
+classMates['sarika'] = 862
+classMates[tilly] = 687
+
+print(classMates)
+
+
+####################### TASK 3 ##########################
+#Delete an item in Dictionaries
+
+del classMates[tilly]
+
+
+####################### TASK 4 ##########################
+#Retrieving the keys from the classmate dictionaries
+print(classMates.keys())
+
+#getting the values of the key in classmate dictionaries
+print(classMates.values())
+
+
+####################### TASK 5 ##########################
+#getting the keys and casting it into a list.. Remember to always use list()
+phone_keys = list(classMates.keys())
+
+#getting the key at position 1 of the phone_keys array
+phone_values = list(classMates.values())
+
+mari_val = (phone_keys[1])
+
+####################### TASK 6 ##########################
+#AVOIDING KEY ERRORS
+if 'sarika' in classMates:
+    print('sarika', ':', classMates['sarika'])
+else:
+    print('sarika', 'not found !')
+    
+    
+
+labels = list(classMates.keys())
+
+print(labels)
+
+labels.sort(key=lambda a:classMates[a])
+
+print(labels)
+
+
+#######################TASK7 & 8##########################
+
+
+family = {}
+
+family ['makims'] = ('may' , 5,'tase')
+family ['patrick'] = ('july' , 4,'base')
+family ['etubom'] = ('Dec' , 10,'vese')
+family ['eno'] = ('mar' , 21,'pase')
+
+
+family_keys = list(family.keys())
+
+print(family_keys)
+
+family_keys.sort(key = lambda f:family[f][2][-1])
+
+print(family_keys)
+
+family_keys.sort(reverse = False, key=lambda f:family[f])
+
+print(family_keys)
+
+family_keys.sort(reverse = True, key=lambda f:family[f])
+
+print(family_keys)
+
+
+#################### TASK 6 ############################
 
 metal = {}
 
@@ -28,100 +133,6 @@ print(metal_keys_list)
 #returning key-value pairs for the second position in descending order
 sorted_value = sorted(metal.items(),reverse= True,key=lambda kv: kv[1][1])
 print(sorted_value)
-
-
-
-salary = {}
-salary['sera'] = 20000
-print(salary)
-salary['brothers'] = ['Ekema','daddy','Etete']
-
-#Updating a value or key on the dictionary
-salary['sera'] += 1000
-print(salary)
-
-classMates = {}
-
-classMates['mel'] = 862
-classMates['mari'] = 885
-classMates['seraphine'] = 385
-
-
-
-classMates['seraphine'] = 7532633368
-classMates['mel'] = 86256
-classMates['mari'] = 88595
-
-
-
-tilly = 'tilly'
-
-classMates['jennifer'] = 3456
-classMates['sarika'] = 862
-classMates[tilly] = 687
-
-print(classMates)
-
-#Delete an item in Dictionaries
-
-del classMates[tilly]
-
-##getting the keys from the classmate dictionaries
-#print(classMates.keys())
-
-#getting the values of the key in classmate dictionaries
-print(classMates.values())
-
-#getting the keys and casting it into a list.. Remember to always use list()
-phone_keys = list(classMates.keys())
-
-#getting the key at position 1 of the phone_keys array
-phone_values = list(classMates.values())
-
-mari_val = (phone_keys[1])
-
-
-
-if 'sarika' in classMates:
-    print('sarika', ':', classMates['sarika'])
-else:
-    print('sarika', 'not found !')
-
-
-
-labels = list(classMates.keys())
-
-print(labels)
-
-labels.sort(key=lambda a:classMates[a])
-
-print(labels)
-
-family = {}
-
-family ['makims'] = ('may' , 5,'tase')
-family ['patrick'] = ('july' , 4,'base')
-family ['etubom'] = ('Dec' , 10,'vese')
-family ['eno'] = ('mar' , 21,'pase')
-
-
-family_keys = list(family.keys())
-
-print(family_keys)
-
-family_keys.sort(key = lambda f:family[f][2][-1])
-
-print(family_keys)
-
-family_keys.sort(reverse = False, key=lambda f:family[f])
-
-print(family_keys)
-
-family_keys.sort(reverse = True, key=lambda f:family[f])
-
-print(family_keys)
-
-
 
 
 
