@@ -104,7 +104,7 @@ family_keys.sort(reverse = True, key=lambda f:family[f])
 print(family_keys)
 
 
-#################### TASK 6 ############################
+##################### DENSITIES############################
 
 metal = {}
 
@@ -128,7 +128,6 @@ metal_keys_list.sort(reverse = True,key=lambda k:metal[k][1])
 
 
 print(metal_keys_list)
-
 
 #returning key-value pairs for the second position in descending order
 sorted_value = sorted(metal.items(),reverse= True,key=lambda kv: kv[1][1])
