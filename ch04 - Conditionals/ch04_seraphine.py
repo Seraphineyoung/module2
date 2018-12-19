@@ -12,22 +12,35 @@ print(isaTeen)
 
 
 
-#IF,ELSE AND ELIF
+number = input("Enter a number between 1 and 10 ")
+number = int(number)
 
-#############################TASK 1 #####################################
-if age < 13 :
-    print('child')
+########################Task3##########################
+
+if number >10 :
+    print("Too High")
+if number< 0 :
+    print("Too Low")
     
-#############################TASK 2 #####################################
-elif age < 18:
-    print('teen')
-elif age < 65:
-    print('adult')
-    
-#############################TASK 3 #####################################
+########################Task4##########################
+if  type(number) == int :
+    print("you have enter a number")
 else:
-    print('pensioner')
+    print("you have not enter a number")
+
+########################Task5##########################
+age = input("Enter your age ")
+age = int(age)
+
+if  age < 13:
+    print('child')
+elif age < 18 :
+    print('teen')
     
+elif age < 65 :
+    print('adult')
+else:
+    print ('pensioner')
 
 
 
