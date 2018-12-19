@@ -1,4 +1,5 @@
 
+#############################TASK 1 #####################################
 #Simple calculative  Operations
 
 print (5-6)
@@ -10,8 +11,8 @@ print (5-6)
 2*(10+2)
 print (2**4)
 
-
-#Working wih variables 
+#############################TASK 2 #####################################
+#Variable Practise 
 age =5
 age = "almost three"
 age = 2.5
@@ -19,7 +20,9 @@ age= 'I really don\'t know'
 print (type(age))
 
 
+#############################TASK 3 #####################################
 #Basic string Manipulation
+
 print('hello' + 'world')
 print('Joke' * 3)
 
@@ -46,8 +49,9 @@ print (S1 + S2 + str(S3))
 
 print('\n')
 
-
+#############################TASK 4 #####################################
 #string Formating
+
 age = 6 
 like ='painting'
 age_description = 'my age is {} and I like {}.'.format(age,like)
