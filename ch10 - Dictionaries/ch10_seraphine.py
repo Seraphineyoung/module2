@@ -3,9 +3,13 @@
 
 #CREATING A DICTIONARY
 salary = {}
+
+#Assigning a Value
 salary['sera'] = 20000
 print(salary)
 salary['brothers'] = ['Ekema','daddy','Etete']
+
+
 
 
 ####################### TASK 2 ##########################
@@ -25,20 +29,26 @@ classMates['mel'] = 86256
 classMates['mari'] = 88595
 
 
-#uPDATING VALUES IN A DICTIONARY
+#UPDATING VALUES IN A DICTIONARY
 tilly = 'tilly'
 
 classMates['jennifer'] = 3456
 classMates['sarika'] = 862
 classMates[tilly] = 687
-
 print(classMates)
+
+
+#RETRIEVING A VALUE
+print(classMates['sarika'])
+
+
 
 
 ####################### TASK 3 ##########################
 #Delete an item in Dictionaries
-
 del classMates[tilly]
+
+
 
 
 ####################### TASK 4 ##########################
@@ -49,6 +59,8 @@ print(classMates.keys())
 print(classMates.values())
 
 
+
+
 ####################### TASK 5 ##########################
 #getting the keys and casting it into a list.. Remember to always use list()
 phone_keys = list(classMates.keys())
@@ -57,6 +69,10 @@ phone_keys = list(classMates.keys())
 phone_values = list(classMates.values())
 
 mari_val = (phone_keys[1])
+
+
+
+
 
 ####################### TASK 6 ##########################
 #AVOIDING KEY ERRORS
@@ -74,6 +90,9 @@ print(labels)
 labels.sort(key=lambda a:classMates[a])
 
 print(labels)
+
+
+
 
 
 #######################TASK7 & 8##########################

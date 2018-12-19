@@ -25,9 +25,6 @@ print(x[::-1])
 print(x[::1])
 print(x[-3::])
 
-
-
-#####################Task 3 #############################
 #List operations
 
 x = ['the','cat','sat']
@@ -53,8 +50,8 @@ print(z)
 print(set(z))
 
 
-#####################Task 4 #############################
-#Sorting a List
+############################ Task3  #################################
+#Slicing a List
 
 b = ['the','cat','sat','hair','food','skin','care']
 
@@ -64,10 +61,13 @@ print(b[3:5])
 print(b[-1::-1])
 print(b[-3:-1])
 
-##################SORT AND SORTED###################
+
+############################ Task4  #################################
+
+#SORT AND SORTED
 x = [5,3,8,1,6,0,1,2,5]
 
-############SORTED DOES NOT MUTATE X################
+#SORTED DOES NOT MUTATE X
 y = sorted(x)
 
 print(y)
@@ -80,7 +80,7 @@ print(x.sort())
 #prints out the mutated version
 print(x)
 
-################REVERSE SORT#########################
+#REVERSE SORT
 x = [5,3,8,1,6,0,1,2,5]
 y= ['the','cat','sat','hair','food','skin','care']
 
@@ -103,7 +103,7 @@ print(x[-3::])
 
 
 
-#####################Task 5 #############################
+################################Task 5 #############################
 
 #CREATING A TUPLES
 

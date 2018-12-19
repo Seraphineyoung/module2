@@ -1,6 +1,7 @@
 
 #FUNCTION FILE
 
+#############################TASK 2 #####################################
 def add_two_numbers():
     num1 = input('what is your first number? :')
     num2 = input('what is your second number? :')
@@ -19,7 +20,8 @@ def convert_distance(miles):
     print('Converting distance in miles to Kilometers: ')
     print('Distance in miles: ', miles)
     print('Converting distance in Kilometers: ',kilometers)
-
+    
+###########################  TASK 4 & 5 ##################################
 
 def temp_conversion(centigrade):
     centigrade = int(centigrade)

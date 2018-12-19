@@ -1,57 +1,59 @@
 
+#############################TASK 1 #####################################
+class Customer(object):
+     
+#     A customer of ABC Bank with a checking account.
+#     Customers have the following properties:
+#     Attributes:
+#     name: A string representing the customer's name.
+#     balance: A float tracking the current balance of the
+#     customer's account.
+    
+  
+    def __init__(self,name,balance,overdraft=0):
+        """Return a Customer object whose name is *name* and
+         starting balance is *balance*."""
+        self.name = name
+        self.balance = balance
+        self.overdraft = overdraft
+        
+    def overdraft_limit(self,overdraft):
+        if self.balance >= 1500:
+            self.balance += overdraft
+            return self.balance
+        else:
+            return('Your have less than 1500 in your acccount and not eligible for overdraft')
+            
+    
+    def withdraw(self,amount):
+        """Return the balance remaining 
+        after withdrawing *amount*dollars."""
+        
+        if amount > self.balance:
+            raise RuntimeError('Amount greater than available balance.')
+        self.balance -= amount
+        return self.balance
+    
+    def deposit(self,amount):
+        """Return the balance remaining after depositing *amount* dollars."""
+        self.balance += amount
+        return self.balance
 
-#class Customer(object):
-#     
-##     A customer of ABC Bank with a checking account.
-##     Customers have the following properties:
-##     Attributes:
-##     name: A string representing the customer's name.
-##     balance: A float tracking the current balance of the
-##     customer's account.
-#    
-#  
-#    def __init__(self,name,balance,overdraft=0):
-#        """Return a Customer object whose name is *name* and
-#         starting balance is *balance*."""
-#        self.name = name
-#        self.balance = balance
-#        self.overdraft = overdraft
-#        
-#    def overdraft_limit(self,overdraft):
-#        if self.balance >= 1500:
-#            self.balance += overdraft
-#            return self.balance
-#        else:
-#            return('Your have less than 1500 in your acccount and not eligible for overdraft')
-#            
-#    
-#    def withdraw(self,amount):
-#        """Return the balance remaining 
-#        after withdrawing *amount*dollars."""
-#        
-#        if amount > self.balance:
-#            raise RuntimeError('Amount greater than available balance.')
-#        self.balance -= amount
-#        return self.balance
-#    
-#    def deposit(self,amount):
-#        """Return the balance remaining after depositing *amount* dollars."""
-#        self.balance += amount
-#        return self.balance
-#
-#
-#cust_name = input('what is your name?: ')
-#customer_1 = Customer(cust_name ,0 )
-#print('Welcome' ,customer_1.name , 'Thank you for registering your name')
-#deposit_amount = int(input('How much do you want to deposit today?: '))
-#add_to_balance = (customer_1.deposit(deposit_amount))
-#print('Your current account balance is' ,customer_1.balance)
-#customer_withdraw = int(input('How much do you wanna withdraw today? :'))
-#
-#print('You withdrew ', customer_withdraw,'and your remaining balance is ', customer_1.balance - customer_withdraw)
-#
-#print(f'Your balance is {customer_1.balance}.If your balance is >= 1500, you are eligible for a £500 overdraft', customer_1.overdraft_limit(500))
 
+cust_name = input('what is your name?: ')
+customer_1 = Customer(cust_name ,0 )
+print('Welcome' ,customer_1.name , 'Thank you for registering your name')
+deposit_amount = int(input('How much do you want to deposit today?: '))
+add_to_balance = (customer_1.deposit(deposit_amount))
+print('Your current account balance is' ,customer_1.balance)
+customer_withdraw = int(input('How much do you wanna withdraw today? :'))
+
+print('You withdrew ', customer_withdraw,'and your remaining balance is ', customer_1.balance - customer_withdraw)
+
+print(f'Your balance is {customer_1.balance}.If your balance is >= 1500, you are eligible for a £500 overdraft', customer_1.overdraft_limit(500))
+
+
+#############################TASK 2 #####################################
 
 #INHERITANCE IN OOP - Task 2
 
@@ -87,7 +89,7 @@ print(claireCat.new_age(5))
 claireCat.meow()      
         
 
-
+#############################TASK 3 #####################################
 #INHERITANCE IN OOP - Task 3
 
 class Robot():
@@ -110,7 +112,8 @@ GrandMa.clean()
 GrandMa.HairCut()
         
 
- #ASSOCIATION IN OOP - Task 3      
+#############################TASK 4 #####################################
+ #ASSOCIATION IN OOP - Task 4      
       
             
 class SuperRobot():
