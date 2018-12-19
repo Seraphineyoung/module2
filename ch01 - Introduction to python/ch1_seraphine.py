@@ -15,7 +15,7 @@ print('Hello World')
 G = 2 + 3, 5,4,6
 B = 2.9 + 3.2
 C =(3.2 / 2.0) + 7
-D = 2**3
+D = 2**3 
 E = 4**(1/2)
 
 #String casting and concatination
@@ -24,6 +24,8 @@ A =[1,2,3,4,5]
 J = float(2.5)
 P = int(J)
 O = str(P)
+
+
 S = "my name is seraphine"
 print(S)
 print(A,'\n',B,'\n',C, '\n',D,'\n',E,'\n', F)
