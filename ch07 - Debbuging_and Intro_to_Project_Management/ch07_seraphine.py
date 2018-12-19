@@ -1,13 +1,13 @@
 
 
-###############Task1#############
+#---------------Task1-----------------------
 userInput = input('Please give a number ')
 print(type(userInput))
 userInput = int(userInput)
 result = userInput - 2
 print(result)
 
-###############Task2#############
+#--------------Task2------------------------
 
 userInput = input('Please give a number ')
 def simpleOperation(userInput):
@@ -24,7 +24,8 @@ result2 = nestedOperation(result)
 print(result2)
 
 
-## debugging using breakpoints 
+ #DEBUG MODE
+ 
 #1) double click next to the line number of your code to set up a breakpoint,a red circle should
 #appear 
 #2)you can now run your code in debug mode using debugging buttons on the toolbar

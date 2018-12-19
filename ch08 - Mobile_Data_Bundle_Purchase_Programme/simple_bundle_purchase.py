@@ -1,30 +1,4 @@
 
-#def DataBundlePurchase(truePasscode, balance):
-#
-#    count = 0
-#    while count < 3:
-#        
-#        UserInput = input('Please enter your password?:' )
-#        if truePasscode == UserInput:
-#            return transaction_type(balance) 
-#      
-#        else:
-#            print('Wrong passcode')
-#            count +=1
-#            
-#            if count == 3:
-#                return'count is greater than 3'
-#        
-#
-#result = DataBundlePurchase('1234', 34.55)
-#print (result)
-
-
-#def userInput ():
-#    counter = 0
-#    userpasword = input('Please enter your password?:' )
-#    return userpasword
-
 def counter(truePasscode, balance):
     counter=0
     return DataBundlePurchase(truePasscode, balance, counter)
@@ -83,15 +57,17 @@ def user_confirm_phone(balance):
      
 def max_top_up_amount(balance):
     
-    credit_amount = int(input('How many GB do you want ? '))
+    credit_amount = int(input('How many GB do you want, Please enter multiples of 5? '))
     if credit_amount <= 35 and credit_amount < balance:
         if credit_amount % 5 == 0:
            new_balance = round(balance - credit_amount)
            return f'You have bought {credit_amount} and your remaining balance is {new_balance}'
         else:
-            return 'Please enter multiples of 5'
+            print( 'Please enter multiples of 5')
+            return max_top_up_amount(balance)
     else:
-        return 'maximum amount has to be less than 35 and Your balance should be less than the top amount'
+        print('maximum amount has to be less than 35 and Your balance should be less than the top amount')
+        return max_top_up_amount(balance)
     
     
     
