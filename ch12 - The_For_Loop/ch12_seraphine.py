@@ -99,37 +99,55 @@ values = [3,12,9]
          
         
 
-def SumValues(V):
-    sum_Values = 0
-    for val in V:
-        
-        sum_Values += val
-    print('TOTAL: ' + str(sum_Values))    
-    return sum_Values
+#def SumValues(V):
+#    sum_Values = 0
+#    for val in V:
+#        
+#        sum_Values += val
+#    print('TOTAL: ' + str(sum_Values))    
+#    return sum_Values
+#    
+#
+#SumValues(values)    
+#        
+#########################Task 10 ####################################
+##Loop with Index values
+##range function take in the start, stop and step
+#
+#for i in range(2,11,2):
+#    print(i)
+#
+#for index in range(len(values)):
+#    print(index)
+#
+#########################Task 11 ####################################
+##Loop with range function
+#
+## This prints out the number of elements in the list and thier index.
+#
+## When you use values[index], it will ive you the values for the index.
+#for index in range(len(values)):
+#    print(values[index])
     
 
-SumValues(values)    
-        
-########################Task 10 ####################################
-#Loop with Index values
-#range function take in the start, stop and step
+########################Task 12 ####################################
 
-for i in range(2,11,2):
-    print(i)
+number_list = [1,5,30,40,200,101,100,22]
 
-for index in range(len(values)):
-    print(index)
-
-########################Task 11 ####################################
-#Loop with range function
-
-# This prints out the number of elements in the list and thier index.
-
-
-# When you use values[index], it will ive you the values for the index.
-for index in range(len(values)):
-    print(values[index])
+for num in number_list:
     
+    if num > 100:
+        print('found: ', num)
+        break
+   
+#Getting the values and the index.
+
+for index in range(len(number_list)):
+    if number_list[index] > 100:
+        print('break :', number_list[index], 'with index', index)
+        break
+    
+        
 
 
 
