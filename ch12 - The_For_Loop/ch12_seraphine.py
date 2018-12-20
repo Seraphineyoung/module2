@@ -53,15 +53,15 @@
 ########################Task 6 and 7 ####################################
 #Loop through dictionary data type
     
-metal = {}
-
-metal['iron'] = (7.8,6,12)
-metal['gold'] = (1.3,20,2)
-metal['zinc'] = (4.9,3,9)
-metal['lead'] = (9.9,2,20)
-metal['silver'] = (2,10,4)
-
-metal_list = list(metal.keys())
+#metal = {}
+#
+#metal['iron'] = (7.8,6,12)
+#metal['gold'] = (1.3,20,2)
+#metal['zinc'] = (4.9,3,9)
+#metal['lead'] = (9.9,2,20)
+#metal['silver'] = (2,10,4)
+#
+#metal_list = list(metal.keys())
 
 #print(metal_list)
 #
@@ -75,16 +75,27 @@ metal_list = list(metal.keys())
     
         
     
-# sorting through the metal_list wish holds the keys and print out the each key and use each key to print out the values in metal[items][1].. the [1] at the end is getting the second value at the end.   
+# sorting through the metal_list wish holds the keys and print out the each key and use each key to print out the values in metal[items][1].. the [1] at the end is getting the second value at the end.  
+
+
+###################################OR###########################
+
+dictionaryName = {'name': 'seraphine', 'age': 29, 'husband': 'edem'}
+
+for k,v in dictionaryName.items():
+    print(k,v)
+    
+for item in dictionaryName.items():
+    print(item)
     
 
 
 ########################Task 8 ####################################
 #Combine counting loop and conditionals to filter out values
 
-for items in metal_list:
-    if metal[items][0] > 7:
-        print(items,metal[items][1])
+#for items in metal_list:
+#    if metal[items][0] > 7:
+#        print(items,metal[items][1])
         
         
 ########################Task 9 ####################################
@@ -131,6 +142,7 @@ values = [3,12,9]
     
 
 ########################Task 12 ####################################
+#Using a break in a 'for' loops.
 
 number_list = [1,5,30,40,200,101,100,22]
 
