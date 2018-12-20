@@ -91,27 +91,45 @@ for items in metal_list:
 #Design a sum function
         
 values = [3,12,9]
-total = 0
-for val in values:
-    total += val
-print('TOTAL: ' + str(total))
+#total = 0
+#for val in values:
+#    total += val
+#    
+#print('TOTAL: ' + str(total))
          
         
-        
-        
 
-def SumValues(values):
+def SumValues(V):
     sum_Values = 0
-    for val in values:
+    for val in V:
+        
         sum_Values += val
+    print('TOTAL: ' + str(sum_Values))    
     return sum_Values
     
-    print('TOTAL: ' + str(sum_Values))
-    
+
+SumValues(values)    
         
+########################Task 10 ####################################
+#Loop with Index values
+#range function take in the start, stop and step
+
+for i in range(2,11,2):
+    print(i)
+
+for index in range(len(values)):
+    print(index)
+
+########################Task 11 ####################################
+#Loop with range function
+
+# This prints out the number of elements in the list and thier index.
 
 
-
+# When you use values[index], it will ive you the values for the index.
+for index in range(len(values)):
+    print(values[index])
+    
 
 
 
