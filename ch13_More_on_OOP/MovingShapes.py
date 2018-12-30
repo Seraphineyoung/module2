@@ -3,6 +3,10 @@ from Shapes import *
 
 #cordx = starting x position
 #cordy = starting y position
+#deltax,deltay  = Instance variable that randomly generates a number between 0 and 15 
+#min_x,max_y = Holds the minimum starting position of Xand Y, which is within the diameter of the box.
+#min_y,Max_y = Holds the minimum starting position of Xand Y, which is within the diameter of the box.
+
 
 class MovingShape:
     def __init__(self,frame,shape,diameter,cordx = 0,cordy= 0,min_x=0,max_x=0,min_y=0,max_y=0,deltax = 5+10 * r(),deltay = 5+10 * r()):
