@@ -24,17 +24,16 @@ class MovingShape:
     def mininum_position_X(self):
         self.min_x = self.diameter/2
         self.max_x = self.frame.width - self.min_x
-        #print(self.max_x)
         self.cordx = self.min_x + r() * (self.max_x - self.min_x )
-        #print(self.cordx)
+        
         
    
     def mininum_position_Y(self):
         self.min_y = self.diameter/2
         self.max_y = self.frame.width - self.min_y
-        #print(self.max_y)
+        #generation a random value for starting position of Y
         self.cordy = self.min_y + r() * (self.max_y - self.min_y )
-        #print(self.cordy)
+        
        
                
     def moveTick(self):
