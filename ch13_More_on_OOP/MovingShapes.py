@@ -1,11 +1,15 @@
 from pylab import random as r
 from Shapes import *
 
+#cordx = starting x position
+#cordy = starting y position
+
 class MovingShape:
     def __init__(self,frame,shape,diameter,cordx = 0,cordy= 0,min_x=0,max_x=0,min_y=0,max_y=0,deltax = 5+10 * r(),deltay = 5+10 * r()):
         self.shape = shape
         self.diameter = diameter
         self.figure = Shape(shape,diameter)
+        #Intializing the frame class in order to access the width 
         self.frame = frame
         self.cordx = cordx
         self.cordy = cordy
