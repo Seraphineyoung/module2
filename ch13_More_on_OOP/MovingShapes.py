@@ -34,7 +34,7 @@ class MovingShape:
         self.max_x = self.frame.width - self.min_x
         #generation a random value for starting position of Y
         self.cordx = self.min_x + r() * (self.max_x - self.min_x )
-        
+        print(self.cordx)
         
    
     def mininum_position_Y(self):
@@ -42,6 +42,7 @@ class MovingShape:
         self.max_y = self.frame.width - self.min_y
         #generation a random value for starting position of Y
         self.cordy = self.min_y + r() * (self.max_y - self.min_y )
+        print(self.cordy)
         
        
                
@@ -50,6 +51,13 @@ class MovingShape:
          self.mininum_position_Y()
          self.cordx += self.cordx + self.deltax
          self.cordy += self.cordy + self.deltay
+         
+         if self.cordx < self.min_x or self.cordx > self.max_x:
+             self.cordx = self.cordx * -1
+             
+         if self.cordy < self.min_y or self.cordy > self.max_y:
+               self.cordy = self.cordy * -1 
+               
          self.goto(self.cordx,self.cordy)
          
     
