@@ -34,15 +34,15 @@ class MovingShape:
         self.max_x = self.frame.width - self.min_x
         #generation a random value for starting position of Y
         self.cordx = self.min_x + r() * (self.max_x - self.min_x )
-        print(self.cordx)
+        
         
    
     def mininum_position_Y(self):
         self.min_y = self.diameter/2
-        self.max_y = self.frame.width - self.min_y
+        self.max_y = self.frame.height - self.min_y
         #generation a random value for starting position of Y
         self.cordy = self.min_y + r() * (self.max_y - self.min_y )
-        print(self.cordy)
+        
         
        
                
