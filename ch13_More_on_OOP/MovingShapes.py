@@ -24,6 +24,7 @@ class MovingShape:
     def mininum_position_X(self):
         self.min_x = self.diameter/2
         self.max_x = self.frame.width - self.min_x
+        #generation a random value for starting position of Y
         self.cordx = self.min_x + r() * (self.max_x - self.min_x )
         
         
