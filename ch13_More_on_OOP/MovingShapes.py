@@ -49,14 +49,13 @@ class MovingShape:
         
               
                      
-    def moveTick(self):
+    def moveTick(self): 
         
          self.call_minX_and_minY()
-        
+         
          self.cordx = self.cordx + self.deltax 
          self.cordy = self.cordy + self.deltay
           
-         
          if self.cordx < self.min_x or self.cordx > self.max_x:
              self.cordx = self.cordx * -1
              
@@ -75,19 +74,22 @@ class Diamond(MovingShape):
     def __init__(self,frame,diameter):
         MovingShape.__init__(self,frame,'diamond',diameter)
         
-    def mininum_position_X(self):
-        self.min_x = self.diameter/2
+    def mininum_position_diamond_X(self):
+        self.min_x = self.diameter * 2
         self.max_x = self.frame.width - self.min_x
         #generation a random value for starting position of Y
         self.cordx = self.min_x + r() * (self.max_x - self.min_x )
         
         
-    def mininum_position_Y(self):
-        self.min_y = self.diameter/2
+    def mininum_position_diamond_Y(self):
+        self.min_y = self.diameter * 2
         self.max_y = self.frame.height - self.min_y
         #generation a random value for starting position of Y
         self.cordy = self.min_y + r() * (self.max_y - self.min_y )
         
+    def call_minX_and_minY(self):
+        self.mininum_position_diamond_X()
+        self.mininum_position_diamond_Y()
         
         
         

@@ -4,9 +4,23 @@ frame = Frame()
 numshapes = 5
 shapes = []
 
+size = 60
+
 for i in range(numshapes):
-    shapes.append(Square(frame,100))
-    
-for i in range(50):
+    shapes.append(Square(frame,size))
+    shapes.append(Diamond(frame,size))
+    shapes.append(Circle(frame,size))
+
+for i in range(100):
     for shape in shapes:
         shape.moveTick()
+
+frame.close()
+    
+
+#for i in range(numshapes):
+#    shapes.append(Square(frame,100))
+#    
+#for i in range(50):
+#    for shape in shapes:
+#        shape.moveTick()
