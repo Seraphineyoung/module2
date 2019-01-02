@@ -1,17 +1,17 @@
 from MovingShapes import *
 frame = Frame()
 
-numshapes = 5
+numshapes = 3
 shapes = []
 
-size = 60
+size = 70
 
 for i in range(numshapes):
     shapes.append(Square(frame,size))
     shapes.append(Diamond(frame,size))
     shapes.append(Circle(frame,size))
 
-for i in range(100):
+for i in range(20):
     for shape in shapes:
         shape.moveTick()
 
