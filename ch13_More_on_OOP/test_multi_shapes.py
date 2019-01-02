@@ -10,6 +10,7 @@ for i in range(numshapes):
     shapes.append(Square(frame,size))
     shapes.append(Diamond(frame,size))
     shapes.append(Circle(frame,size))
+    #shapes.append(Polygon(frame,size))
 
 for i in range(20):
     for shape in shapes:

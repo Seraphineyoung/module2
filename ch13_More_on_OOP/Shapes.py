@@ -85,7 +85,7 @@ class Shape:
         t.hideturtle()
         t.penup()
         t.color(Colours.get_colour())
-        t.fillcolor("violet")
+        t.fillcolor("")
         t.speed('fastest')
         t.shapesize(diameter/20.0,diameter/20.0,1)
         t.showturtle()

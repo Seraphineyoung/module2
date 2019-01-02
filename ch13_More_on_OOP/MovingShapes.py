@@ -80,7 +80,7 @@ class Diamond(MovingShape):
         self.max_x = self.frame.width - self.min_x
         #generation a random value for starting position of Y
         self.cordx = self.min_x + r() * (self.max_x - self.min_x )
-        print(self.cordx)
+        
         
     def mininum_position_diamond_Y(self):
         self.min_y = self.diameter * 2
@@ -88,7 +88,7 @@ class Diamond(MovingShape):
         self.max_y = self.frame.height - self.min_y
         #generation a random value for starting position of Y
         self.cordy = self.min_y + r() * (self.max_y - self.min_y )
-        print(self.cordy)
+        
         
     def call_minX_and_minY(self):
         self.mininum_position_diamond_X()
@@ -99,7 +99,12 @@ class Diamond(MovingShape):
 class Circle(MovingShape):
     def __init__(self,frame,diameter):
         MovingShape.__init__(self,frame,'circle',diameter)
+    
+class Polygon(MovingShape):
+    def __init__(self,frame,diameter):
+        MovingShape.__init__(self,frame,'polygon',diameter)
         
+    
         
         
         
