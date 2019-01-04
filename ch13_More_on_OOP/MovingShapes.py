@@ -100,9 +100,7 @@ class Circle(MovingShape):
     def __init__(self,frame,diameter):
         MovingShape.__init__(self,frame,'circle',diameter)
     
-class Polygon(MovingShape):
-    def __init__(self,frame,diameter):
-        MovingShape.__init__(self,frame,'polygon',diameter)
+
         
     
         
