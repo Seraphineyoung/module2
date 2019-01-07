@@ -12,7 +12,7 @@ for i in range(numshapes):
     shapes.append(Circle(frame,size))
     
 
-for i in range(300):
+for i in range(100):
     for shape in shapes:
         shape.moveTick()
 
