@@ -4,7 +4,7 @@ frame = Frame()
 numshapes = 3
 shapes = []
 
-size = 70
+size = 50
 
 for i in range(numshapes):
     shapes.append(Square(frame,size))

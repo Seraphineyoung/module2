@@ -4,7 +4,7 @@ import turtle
 ####################################################
 
 class Frame:
-    def __init__(self,width=800,height=600):
+    def __init__(self,width=300,height=300):
         self.width = width
         self.height = height
         self.screen = turtle.Screen()
