@@ -197,6 +197,8 @@ for num in number:
         print (num * multiply,end='')
     print('\n')
 
+#########################TASK 14 ################################ 
+
 
 for i in range(1,11):
     for j in range(1,11):
