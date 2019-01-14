@@ -34,6 +34,23 @@ for i in range(10):
     dynamic_data_entry()
     time.sleep(1)
     
+    
+    
+#def read_from_all():
+#    c.execute('SELECT * FROM stuffToBuild WHERE value = 8')
+#    for row in c.fetchall():
+#        print(row)
+#read_from_all()   
+    
+
+def read_from_db2():
+    c.execute('SELECT * FROM stuffToBuild WHERE value = 8 and unix > 1547032805.57419 and unix < 1547032901.49783')
+    for row in c.fetchall():
+        print(row)
+    
+read_from_db2()   
+
+    
 c.close()
 conn.close()
     
