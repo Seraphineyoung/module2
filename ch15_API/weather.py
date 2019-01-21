@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 10 14:00:48 2019
 
-@author: serap
-"""
 
 import requests
 
